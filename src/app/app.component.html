@@ -39,8 +39,8 @@
 
 <div class="text-center">Add symbol to tracker!</div>
 
-<li *ngFor="let stock of stockData">
-  {{ stock.symbol }}
-  {{ stock.name }}
-  {{ stock.exchange }}
+<li *ngIf="stockData">
+  {{ stockData.symbol }}
+  {{ stockData.companyName }}
+  {{ stockData.delayedPrice }}
 </li>
